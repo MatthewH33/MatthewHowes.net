@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Matthew Howes</title>
+<meta name="description" content="Matthew Howes — 15-year-old Australian paratriathlete, coder, and Australian Open ballkid." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" />
+<style>
+  :root {
+    --bg: #f7f1e6;
+    --ink: #221b12;
+    --muted: #6a5f4e;
+    --link: #cf6a4a;
+    --link-hover: #a94a2c;
+    --rule: #2b3a67;
+    --border: #e2d7c3;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "EB Garamond", Georgia, serif;
+    font-feature-settings: "liga", "onum";
+    font-size: 19px;
+    line-height: 1.7;
+  }
+  h1, h2, h3 { font-weight: 500; letter-spacing: -0.01em; margin: 0; }
+  a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { color: var(--link-hover); }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+  @media (min-width: 768px) { .wrap { padding: 0 48px; } }
+
+  header {
+    position: sticky; top: 0; z-index: 30;
+    background: rgba(247, 241, 230, 0.9);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(226, 215, 195, 0.6);
+  }
+  .hdr-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 0; }
+  .brand { font-size: 26px; color: var(--ink); text-decoration: none; }
+  @media (min-width: 768px) { .brand { font-size: 30px; } }
+  nav ul { list-style: none; margin: 0; padding: 0; display: none; gap: 28px; }
+  @media (min-width: 768px) { nav ul { display: flex; } }
+  nav a { color: rgba(34,27,18,0.8); text-decoration: none; font-size: 15px; }
+  nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+  section { padding: 80px 0; }
+  @media (min-width: 768px) { section { padding: 112px 0; } }
+
+  .about { display: grid; gap: 56px; align-items: center; }
+  @media (min-width: 768px) { .about { grid-template-columns: 1fr 1fr; gap: 80px; } }
+
+  .hdr-inner {
+  padding: 24px 24px 24px 40px; /* more left padding */
+}
+  .organic {
+    border-radius: 42% 58% 46% 54% / 52% 46% 54% 48%;
+    overflow: hidden;
+    width: 85%;
+    max-width: 460px;
+    margin: 0 auto;
+    box-shadow: 0 20px 60px -30px rgba(0,0,0,0.35);
+  }
+  .organic img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  .prose { max-width: 620px; }
+  .prose p + p { margin-top: 20px; }
+
+  .divider { max-width: 1600px; margin: 0 auto; padding: 0 8px; }
+  .divider svg { display: block; width: 100%; height: 60px; }
+
+  blockquote { margin: 0; max-width: 720px; font-size: 28px; line-height: 1.35; }
+  @media (min-width: 768px) { blockquote { font-size: 40px; } }
+  blockquote footer { margin-top: 40px; font-size: 22px; color: rgba(34,27,18,0.9); }
+  @media (min-width: 768px) { blockquote footer { font-size: 28px; } }
+
+  .block { padding: 64px 0; }
+  @media (min-width: 768px) { .block { padding: 80px 0; } }
+  .block h2 { font-size: 30px; margin-bottom: 32px; }
+  @media (min-width: 768px) { .block h2 { font-size: 36px; } }
+  .block .body { max-width: 780px; }
+  .block ul { padding-left: 24px; }
+  .block li + li { margin-top: 8px; }
+
+  #projects h2,
+  #sport h2,
+  #ballkid h2,
+  #community h2,
+  #academics h2,
+  #projects .body,
+  #sport .body,
+  #ballkid .body,
+  #community .body,
+  #academics .body {
+    text-align: center;
+    margin-inline: auto;
+  }
+  #projects ul,
+  #sport ul,
+  #academics ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding-left: 1.2em;
+  }
+  #ballkid .full-frame { margin-inline: auto; }
+
+  .full-frame {
+    border-radius: 42% 58% 46% 54% / 52% 46% 54% 48%;
+    overflow: hidden;
+    margin-top: 32px;
+    max-width: 780px;
+    box-shadow: 0 20px 60px -30px rgba(0,0,0,0.35);
+  }
+  .full-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+  footer.site { padding: 32px 0 56px; text-align: center; }
+  footer.site p { margin: 0; font-style: italic; color: rgba(34,27,18,0.7); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hdr-inner">
+    <a class="brand" href="#about">Matthew Howes</a>
+    <nav><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#sport">Sport</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#academics">Academics</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="wrap">
+    <div class="about">
+      <div style="display:flex;justify-content:center;">
+        <div class="organic">
+          <img src="images/triathlon.jpg" alt="Matthew Howes racing on the bike leg of a paratriathlon" />
+        </div>
+      </div>
+      <div class="prose">
+        <p>I&rsquo;m Matthew, a 15-year-old from Australia. I love electronics and building small programs. Recently I made a Minesweeper AI, and right now an <strong>ASL sign-language detection</strong> app built with Apple&rsquo;s ML features, with the goal of extending it into <strong>Auslan</strong>.</p>
+        <p>I&rsquo;m also a <strong>PTS2 paratriathlete</strong>, a five-time National Champion, and a selected Team Vic athlete. Off the course, I was selected for the <strong>2026 Australian Open Ballkid Squad</strong> and volunteer with the All Abilities program.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1600 60" preserveAspectRatio="none"><path d="M0,40 Q800,-10 1600,40" fill="none" stroke="var(--rule)" stroke-width="1.2" /></svg>
+  </div>
+
+  <section class="wrap">
+    <blockquote>
+      <p>&ldquo;Make something people want.&rdquo;</p>
+      <footer>- Paul Graham</footer>
+    </blockquote>
+  </section>
+
+  <section id="projects" class="wrap block">
+    <h2>Projects &amp; Code</h2>
+    <div class="body">
+      <p>I love figuring out how things work and then building them. A few things I&rsquo;ve made or am making:</p>
+      <ul>
+        <li><strong>Auslan / ASL sign-language detection</strong> - an iOS app using Apple&rsquo;s Core ML and Create ML to recognise hand shapes in real time. Starting with ASL, aiming for Auslan.</li>
+        <li><strong><a href="https://github.com/MatthewH33/Minesweeper-Ai">Minesweeper-Ai</a> - Python tool that reads the Google Minesweeper grid and suggests safe moves using a constraint-based solver.</li>
+        <li><a href="https://theschoolexchange.com.au">The School Exchange</a> - an online marketplace I designed, coded, and launched for second-hand school uniforms, promoting sustainability and affordability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sport" class="wrap block">
+    <h2>Sport</h2>
+    <div class="body">
+      <p>I race as a <strong>PTS2 paratriathlete</strong>. Highlights so far:</p>
+      <ul>
+        <li>Selected Team Vic athlete for Para-triathlon Nationals</li>
+        <li>Five-time National Champion (2024 &amp; 2025) - Individual, Relay, and Aquathlon, WA Rockingham</li>
+        <li>Winner, 2025 School Sport Australia Sportsmanship Award - one of only two nationwide recipients, for mentoring a first-time NSW para-athlete</li>
+        <li>Winner, 2XU Triathlon Series (U18 Para) - 2023-24 and 2024-25 seasons</li>
+        <li>1st, 3000m U15 Boys Para at All Schools XCR - qualified for the 2025 Australian National Cross Country Championships</li>
+        <li>1st, SACCSS U14 Junior Boys (MC), 2025</li>
+        <li>Regular in Run for the Kids, Run Melbourne, and the Melbourne Marathon events</li>
+        <li>Swimming at State Championships, integrated with triathlon training</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ballkid" class="wrap block">
+    <h2>Australian Open Ballkid</h2>
+    <div class="body">
+      <p>I was selected for the <strong>2026 Australian Open Ballkid Squad</strong>, and I volunteer with the tournament&rsquo;s All Abilities program - a highlight of my year.</p>
+      <div class="full-frame">
+        <img src="images/ballkid.jpg" alt="Australian Open ballkid squad and players on court" />
+      </div>
+    </div>
+  </section>
+
+  <section id="community" class="wrap block">
+    <h2>Community &amp; Leadership</h2>
+    <div class="body">
+      <p><strong>Faith &amp; Justice Captain</strong> at Salesian College Sunbury. I lead community engagement projects and fundraisers, and I redesigned our Feast Day Walkathon course to make it more accessible and inclusive for students with disabilities.</p>
+      <p>As a <strong>Primary School Project Leader</strong>, I ran a $2,000 fundraising initiative to install a new cubby house for younger students, securing sponsorship from a local vet and coordinating logistics with the Principal, finance team, and suppliers.</p>
+    </div>
+  </section>
+
+  <section id="academics" class="wrap block">
+    <h2>Academics &amp; Other</h2>
+    <div class="body">
+      <ul>
+        <li>General Excellence Scholarship award at Penleigh and Essendon Grammar School</li>
+        <li>Keen interest in STEM, coding, and law</li>
+        <li>Technical crew for school productions (Media Arts Day) - backstage lighting and sound</li>
+        <li>Member of the DAV Debating Team, Conservation Club, Write Club</li>
+        <li>Regularly delivers key messages at school assemblies (up to 1,700 students) and readings at student mass</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <p>Matthew Howes &middot; Melbourne, Australia</p>
+</footer>
+
+</body>
+</html>
