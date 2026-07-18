@@ -80,6 +80,10 @@
   .deco-cat { width: clamp(90px, 14vw, 150px); left: clamp(8%, 12vw, 18%); bottom: 8%; transform: rotate(-6deg); }
   .deco-person { width: clamp(80px, 13vw, 130px); right: clamp(10%, 14vw, 20%); bottom: 12%; transform: rotate(8deg); }
 
+  @media (max-width: 767px) {
+    .deco-person { right: -2%; }
+  }
+
   .georgia-wrap { position: relative; width: min(340px, 72vw); margin: 0 auto; padding-top: clamp(60px, 10vw, 90px); }
   @media (min-width: 768px) { .georgia-wrap { width: min(380px, 42vw); } }
   .georgia-wrap img { display: block; width: 100%; height: auto; filter: drop-shadow(0 24px 48px rgba(0,0,0,0.18)); }
