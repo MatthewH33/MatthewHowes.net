@@ -1,0 +1,159 @@
+{
+  "classes": [
+    {
+      "code": "B09MA1",
+      "name": "Mathematics A1",
+      "goal": 75,
+      "items": [
+        {
+          "id": "mschwc9qq5x7p",
+          "name": "Algebra CT (Expansion and Factorisation)",
+          "weight": 15,
+          "score": null
+        },
+        {
+          "id": "mschwq31th2nd",
+          "name": "Cartesian Plane Test",
+          "weight": 15,
+          "score": null
+        },
+        {
+          "id": "mschx7l0dwhhd",
+          "name": "Statistics Task",
+          "weight": 10,
+          "score": null
+        },
+        {
+          "id": "mschxk404b0m4",
+          "name": "Semester 2 Exam",
+          "weight": 50,
+          "score": null
+        },
+        {
+          "id": "mschy5k6scrat",
+          "name": "Quiz - Total",
+          "weight": 10,
+          "score": null
+        }
+      ]
+    },
+    {
+      "code": "B09SCV",
+      "name": "Science V",
+      "goal": 75,
+      "items": []
+    },
+    {
+      "code": "B09HIV",
+      "name": "History V",
+      "goal": 85,
+      "items": [
+        {
+          "id": "msci19t0wyutn",
+          "name": "Extended Response",
+          "weight": 10,
+          "score": null
+        },
+        {
+          "id": "msci1kd1f5nnd",
+          "name": "Research Assignment",
+          "weight": 10,
+          "score": null
+        },
+        {
+          "id": "msci1v0c4qowt",
+          "name": "Source Analysis",
+          "weight": 15,
+          "score": null
+        },
+        {
+          "id": "msci1z0sl54pq",
+          "name": "Exam",
+          "weight": 50,
+          "score": null
+        },
+        {
+          "id": "msci2970ygxt6",
+          "name": "Essay",
+          "weight": 15,
+          "score": null
+        }
+      ]
+    },
+    {
+      "code": "M09CO22",
+      "name": "ICT: Coding HTML22",
+      "goal": 85,
+      "items": [
+        {
+          "id": "msci35y5nqeiv",
+          "name": "CT 1",
+          "weight": 12.5,
+          "score": null
+        }
+      ]
+    },
+    {
+      "code": "B09TI21",
+      "name": "ICT: Think ICT21",
+      "goal": 85,
+      "items": []
+    },
+    {
+      "code": "B09EW23",
+      "name": "Art: Exploring our World23",
+      "goal": 85,
+      "items": []
+    },
+    {
+      "code": "B09ENV",
+      "name": "English V",
+      "goal": 85,
+      "items": [
+        {
+          "id": "mschz8frj0vp6",
+          "name": "Oral Presentation",
+          "weight": 12.5,
+          "score": null
+        },
+        {
+          "id": "mschzpj0uz58r",
+          "name": "CT4 - Exploring Argument",
+          "weight": 15,
+          "score": null
+        },
+        {
+          "id": "mschzzb9i51tj",
+          "name": "CT5 - ATR Essay",
+          "weight": 15,
+          "score": null
+        },
+        {
+          "id": "msci0aqgmptq8",
+          "name": "Book Time (Creative Writing)",
+          "weight": 7.5,
+          "score": null
+        },
+        {
+          "id": "msci0g23ag0di",
+          "name": "Exam",
+          "weight": 50,
+          "score": null
+        }
+      ]
+    },
+    {
+      "code": "B09RE2D",
+      "name": "Religion2D",
+      "goal": 85,
+      "items": [
+        {
+          "id": "mschma1tcqg7e",
+          "name": "Refern Now-Stand up! Country, Culture and Connection Reflection Questions",
+          "weight": 10,
+          "score": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "gradeledger",
+  "version": "1.0.0",
+  "description": "Grade Ledger - personal grade tracking site with projected grades and goal calculator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
