@@ -11,7 +11,7 @@ const toastEl = document.getElementById('toast');
 
 // The frontend is served separately (e.g. `python -m http.server`), so API
 // calls need the Node server's full address rather than a relative path.
-const API_BASE = 'https://xh5qpk10-3000.auc1.devtunnels.ms/';
+const API_BASE = 'https://xh5qpk10-3000.auc1.devtunnels.ms';
 
 async function api(path, options = {}) {
   const res = await fetch(`${API_BASE}${path}`, {
